@@ -44,7 +44,7 @@ To segment customers based on their transaction frequency, I calculated the tenu
 
 ## QUESTION 3
 ### Walkthrough & Thought Process
-With the insights and logic developed from solving Questions 1 and 2, Task 3 required less time. The question required identifying all savings or investment plans that have not received any inflows in the past 365 days. With the logic of savings (is_regular_savings = 1) or an investment (is_a_fund = 1), I just needed to find those within this filter with no deposits or inflows, deposit records are stored in the savings_savingsaccount table ,so inflow ckeck was done on the savings account table while using the plan table to filter for the identifiers
+With the insights and logic developed from solving Questions 1 and 2, Task 3 required less time. The question required identifying all savings or investment plans that have not received any inflows in the past 365 days. With the logic of savings (is_regular_savings = 1) or an investment (is_a_fund = 1), I just needed to find those within this filter with no deposits or inflows, deposit records are stored in the savings_savingsaccount table ,so inflow check was done on the savings account table while using the plan table to filter for the identifiers
 
 ### Steps Taken
 *Filtered plans to include only those that are either savings or investment based on their respective boolean flags.
